@@ -1,0 +1,552 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "SYSTEM",
+    "children" : [ {
+      "name" : "No 'Out of Memory' error messages occurred? (DAILY SCOPE)",
+      "children" : [ {
+        "name" : "No 'Out of Memory' error messages occurred? (DAILY SCOPE)",
+        "uid" : "c28e1e14dd4a36eb",
+        "parentUid" : "9e4da1f8424f970df14c9935882ebf0d",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1616753586295,
+          "stop" : 1616753586319,
+          "duration" : 24
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e4da1f8424f970df14c9935882ebf0d"
+    }, {
+      "name" : "Are VM logs within DDP Elastic search parsing Limits? (DAILY SCOPE)",
+      "children" : [ {
+        "name" : "Are VM logs within DDP Elastic search parsing Limits? (DAILY SCOPE)",
+        "uid" : "89ef5ae7e76a991b",
+        "parentUid" : "67b2c78ef43f122a7b9c8d7eb21f2a41",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1616753586329,
+          "stop" : 1616753586333,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "67b2c78ef43f122a7b9c8d7eb21f2a41"
+    }, {
+      "name" : "Is Filesystem Usage within the Threshold? (DAILY SCOPE)",
+      "children" : [ {
+        "name" : "Is Filesystem Usage within the Threshold? (DAILY SCOPE)",
+        "uid" : "fb7e1749b95ec4e1",
+        "parentUid" : "30eb934d38bf9565a39c5366bba218c1",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1616753586338,
+          "stop" : 1616753586342,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "30eb934d38bf9565a39c5366bba218c1"
+    }, {
+      "name" : "No Dump files generated?",
+      "children" : [ {
+        "name" : "No Dump files generated?",
+        "uid" : "f4fa98473346d85b",
+        "parentUid" : "e2fa392b1b4715434ef8225112dd43b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586347,
+          "stop" : 1616753586361,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e2fa392b1b4715434ef8225112dd43b0"
+    }, {
+      "name" : "No CleanStart VCS events occurred?",
+      "children" : [ {
+        "name" : "No CleanStart VCS events occurred?",
+        "uid" : "79dfd84cfef7fb21",
+        "parentUid" : "841bbe64a6e5cbeadb5e0cf8b6329f35",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586376,
+          "stop" : 1616753586408,
+          "duration" : 32
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "841bbe64a6e5cbeadb5e0cf8b6329f35"
+    }, {
+      "name" : "No Faulted VCS events occurred?",
+      "children" : [ {
+        "name" : "No Faulted VCS events occurred?",
+        "uid" : "f6277d6c4bb12bcd",
+        "parentUid" : "839b763706f806a0da49ac9071adea80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586417,
+          "stop" : 1616753586445,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "839b763706f806a0da49ac9071adea80"
+    }, {
+      "name" : "No MonitorOffline VCS events occurred?",
+      "children" : [ {
+        "name" : "No MonitorOffline VCS events occurred?",
+        "uid" : "4b4a9a3742b6bc78",
+        "parentUid" : "622d968d1becb818ffd6827b80116159",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586453,
+          "stop" : 1616753586475,
+          "duration" : 22
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "622d968d1becb818ffd6827b80116159"
+    }, {
+      "name" : "No RestartStart VCS events occurred?",
+      "children" : [ {
+        "name" : "No RestartStart VCS events occurred?",
+        "uid" : "508148b935146ea1",
+        "parentUid" : "d62c8782d6ae2e89a3970a42c819547d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586484,
+          "stop" : 1616753586509,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d62c8782d6ae2e89a3970a42c819547d"
+    }, {
+      "name" : "Is Average Garbage Collection time less than threshold?",
+      "children" : [ {
+        "name" : "Is Average Garbage Collection time less than threshold?",
+        "uid" : "6578bd23945e6c53",
+        "parentUid" : "43b4d6a7dc1efc10542796a8720285c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586517,
+          "stop" : 1616753593622,
+          "duration" : 7105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43b4d6a7dc1efc10542796a8720285c5"
+    }, {
+      "name" : "Is Max Garbage Collection time is less than threshold?",
+      "children" : [ {
+        "name" : "Is Max Garbage Collection time is less than threshold?",
+        "uid" : "e7cfdb3d481c2e1b",
+        "parentUid" : "5dd48532877d9e6deb0e3c8b03bb8668",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753593631,
+          "stop" : 1616753599881,
+          "duration" : 6250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5dd48532877d9e6deb0e3c8b03bb8668"
+    }, {
+      "name" : "Is Old/Young GC time ratio within threshold?",
+      "children" : [ {
+        "name" : "Is Old/Young GC time ratio within threshold?",
+        "uid" : "844298e1bd3f1f17",
+        "parentUid" : "bf7736dce59a8d6e85d5ff6d4c81bceb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753599890,
+          "stop" : 1616753606275,
+          "duration" : 6385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf7736dce59a8d6e85d5ff6d4c81bceb"
+    } ],
+    "uid" : "3bdac97c6b1048e174adde6b20d0f2fd"
+  }, {
+    "name" : "FM",
+    "children" : [ {
+      "name" : "Is delayed acknowledgement alarm set for fm as per profile fm_05(LIVE SYSTEM CHECK)?",
+      "children" : [ {
+        "name" : "Is delayed acknowledgement alarm set for fm as per profile fm_05(LIVE SYSTEM CHECK)?",
+        "uid" : "c2659b6aebc16c9d",
+        "parentUid" : "68f8333e6b09674bd257bfb6682ea3f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753586496,
+          "stop" : 1616753588071,
+          "duration" : 1575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "68f8333e6b09674bd257bfb6682ea3f5"
+    }, {
+      "name" : "Is alarm route policy created and enabled(LIVE SYSTEM CHECK)?",
+      "children" : [ {
+        "name" : "Is alarm route policy created and enabled(LIVE SYSTEM CHECK)?",
+        "uid" : "9f87b03cfd410c47",
+        "parentUid" : "375d4269b9c8f695c9a1a74d49df1b53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753588078,
+          "stop" : 1616753591226,
+          "duration" : 3148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "375d4269b9c8f695c9a1a74d49df1b53"
+    }, {
+      "name" : "Are all APG Nodes FM Supervised?",
+      "children" : [ {
+        "name" : "Are all APG Nodes FM Supervised?",
+        "uid" : "cb630c4a54bb1afc",
+        "parentUid" : "60a056c55b034257fc4eb718d72c2251",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753591998,
+          "stop" : 1616753592043,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "60a056c55b034257fc4eb718d72c2251"
+    }, {
+      "name" : "Are all CPP Nodes nodes FM Supervised?",
+      "children" : [ {
+        "name" : "Are all CPP Nodes nodes FM Supervised?",
+        "uid" : "9ea6af191b72b89d",
+        "parentUid" : "ddb92ae698f1187c3d4360c986d86601",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753592055,
+          "stop" : 1616753592081,
+          "duration" : 26
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ddb92ae698f1187c3d4360c986d86601"
+    }, {
+      "name" : "Are all SNMP Nodes nodes FM Supervised?",
+      "children" : [ {
+        "name" : "Are all SNMP Nodes nodes FM Supervised?",
+        "uid" : "f68c2e60c36088ab",
+        "parentUid" : "7f784376fb1f8dca1399e97c9ed620d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753592091,
+          "stop" : 1616753592118,
+          "duration" : 27
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7f784376fb1f8dca1399e97c9ed620d9"
+    }, {
+      "name" : "Open Alarm/sec Trending",
+      "children" : [ {
+        "name" : "Open Alarm/sec Trending",
+        "uid" : "4207b91b28360a58",
+        "parentUid" : "f6ea54c8143def8b25b5a9f7a6dc54ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753595431,
+          "stop" : 1616753597738,
+          "duration" : 2307
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f6ea54c8143def8b25b5a9f7a6dc54ed"
+    }, {
+      "name" : "ENM FM has no failed CPP alarms?",
+      "children" : [ {
+        "name" : "ENM FM has no failed CPP alarms?",
+        "uid" : "3ae09f206cedcdc",
+        "parentUid" : "875cb5e6dfc5b42d358c05798c121555",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753597747,
+          "stop" : 1616753597769,
+          "duration" : 22
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "875cb5e6dfc5b42d358c05798c121555"
+    }, {
+      "name" : "No heartbeat failures occurred",
+      "children" : [ {
+        "name" : "No heartbeat failures occurred",
+        "uid" : "a3feaa458d2c69e",
+        "parentUid" : "8f4b1d55be1e7c3b668bd665c07f8f43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753597777,
+          "stop" : 1616753597800,
+          "duration" : 23
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f4b1d55be1e7c3b668bd665c07f8f43"
+    } ],
+    "uid" : "3d6cb5df5537ffa72cf616d6574b9b24"
+  }, {
+    "name" : "NEO4J",
+    "children" : [ {
+      "name" : "Are Neo4j filesystems usage within threshold? (DAILY SCOPE)",
+      "children" : [ {
+        "name" : "Are Neo4j filesystems usage within threshold? (DAILY SCOPE)",
+        "uid" : "fee2270f447eb7ca",
+        "parentUid" : "57459e8c0275538d44fb9f330c0f7855",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1616753588647,
+          "stop" : 1616753588676,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "57459e8c0275538d44fb9f330c0f7855"
+    }, {
+      "name" : "Are Neo4j Garbage Collection peak times within threshold?",
+      "children" : [ {
+        "name" : "Are Neo4j Garbage Collection peak times within threshold?",
+        "uid" : "80c6ffe65e923857",
+        "parentUid" : "cdb413bbdbabfd270400f471ec171138",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753588690,
+          "stop" : 1616753589974,
+          "duration" : 1284
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cdb413bbdbabfd270400f471ec171138"
+    }, {
+      "name" : "No Unexpected Neo4j Daily Leader Re-Elections Occurred?",
+      "children" : [ {
+        "name" : "No Unexpected Neo4j Daily Leader Re-Elections Occurred?",
+        "uid" : "1c89fcd0ec414fc8",
+        "parentUid" : "639c8c461c5f4cde4dfd90d25fc1bf50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753589987,
+          "stop" : 1616753590119,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "639c8c461c5f4cde4dfd90d25fc1bf50"
+    } ],
+    "uid" : "832a01ccaef945dda7894a93b4266084"
+  }, {
+    "name" : "PM",
+    "children" : [ {
+      "name" : "Are all nodes PM Enabled? (LIVE SYSTEM CHECK)",
+      "children" : [ {
+        "name" : "Are all nodes PM Enabled? (LIVE SYSTEM CHECK)",
+        "uid" : "3c12d0a0c377db6",
+        "parentUid" : "4cad7e6e1d019ba237923ea9043160de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753592774,
+          "stop" : 1616753602329,
+          "duration" : 9555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cad7e6e1d019ba237923ea9043160de"
+    }, {
+      "name" : "Is the maximum duration for file collection within the expected threshold?",
+      "children" : [ {
+        "name" : "Is the maximum duration for file collection within the expected threshold?",
+        "uid" : "79487d24ff627c47",
+        "parentUid" : "41397f1763f56e46291dd29974b1720f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753602343,
+          "stop" : 1616753602367,
+          "duration" : 24
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "41397f1763f56e46291dd29974b1720f"
+    }, {
+      "name" : "No 15 min ROPs missed in the assertion period?",
+      "children" : [ {
+        "name" : "No 15 min ROPs missed in the assertion period?",
+        "uid" : "e1f7a8103cddffd2",
+        "parentUid" : "de301a4ec57bc39d08568baad84de7f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753602378,
+          "stop" : 1616753602434,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de301a4ec57bc39d08568baad84de7f7"
+    }, {
+      "name" : "No files missed for 15 min ROP's in the assertion period?",
+      "children" : [ {
+        "name" : "No files missed for 15 min ROP's in the assertion period?",
+        "uid" : "c00540bbabeec16d",
+        "parentUid" : "6e402f24e064f10ee5002144cb610ce4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753602443,
+          "stop" : 1616753607731,
+          "duration" : 5288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6e402f24e064f10ee5002144cb610ce4"
+    } ],
+    "uid" : "0bf24e8d61f39a185ba11711c5df4e59"
+  }, {
+    "name" : "CMSYNC",
+    "children" : [ {
+      "name" : "Are the same number of COM ECIM nodes synchronised at the start and end of the assertion period?",
+      "children" : [ {
+        "name" : "Are the same number of COM ECIM nodes synchronised at the start and end of the assertion period?",
+        "uid" : "306c174a4d5cea9a",
+        "parentUid" : "b2837927b39c7b282dc4e8161443df6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753600900,
+          "stop" : 1616753600954,
+          "duration" : 54
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2837927b39c7b282dc4e8161443df6b"
+    }, {
+      "name" : "Are the same number of CPP nodes synchronised at the start and end of the assertion period?",
+      "children" : [ {
+        "name" : "Are the same number of CPP nodes synchronised at the start and end of the assertion period?",
+        "uid" : "94dbf085606bfa63",
+        "parentUid" : "e3f86d147abf2e8eca042e6ed261dbce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753600967,
+          "stop" : 1616753600989,
+          "duration" : 22
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3f86d147abf2e8eca042e6ed261dbce"
+    }, {
+      "name" : "Are the same number of GSM nodes synchronised at the start and end of the assertion period?",
+      "children" : [ {
+        "name" : "Are the same number of GSM nodes synchronised at the start and end of the assertion period?",
+        "uid" : "5ed09cec1d76f552",
+        "parentUid" : "c861549c58ca2478193716f1e1c785c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753601001,
+          "stop" : 1616753601026,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c861549c58ca2478193716f1e1c785c0"
+    }, {
+      "name" : "Are the same number of ROUTER nodes synchronised at the start and end of the assertion period?",
+      "children" : [ {
+        "name" : "Are the same number of ROUTER nodes synchronised at the start and end of the assertion period?",
+        "uid" : "85f20ad9948ab6ad",
+        "parentUid" : "5e859f55bda0c6790e72865f32351951",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753601038,
+          "stop" : 1616753601062,
+          "duration" : 24
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5e859f55bda0c6790e72865f32351951"
+    }, {
+      "name" : "Are the same number of SNMP nodes synchronised at the start and end of the assertion period?",
+      "children" : [ {
+        "name" : "Are the same number of SNMP nodes synchronised at the start and end of the assertion period?",
+        "uid" : "804e945d32ec9643",
+        "parentUid" : "fe90e218a8f038b28ca699e3a2f8b661",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616753601074,
+          "stop" : 1616753601098,
+          "duration" : 24
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fe90e218a8f038b28ca699e3a2f8b661"
+    } ],
+    "uid" : "b379cdb7aaeffca3c82e2c6f76f9968e"
+  } ],
+  "name" : "behaviors"
+}

@@ -1,0 +1,38 @@
+{
+  "time" : {
+    "start" : 1607007998463,
+    "stop" : 1607045352866,
+    "duration" : 37354403
+  },
+  "testSuites" : [ {
+    "uid" : "4b39ebc7881a2caa",
+    "name" : "UpgradeAvailability",
+    "title" : "UpgradeAvailability",
+    "time" : {
+      "start" : 1607007998463,
+      "stop" : 1607045352866,
+      "duration" : 37354403
+    },
+    "statistic" : {
+      "total" : 1,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 1
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "7d3c68a6696b47d8",
+      "name" : "TORRV-5477_High_1",
+      "title" : "Measure ENM Availability during Upgrade",
+      "time" : {
+        "start" : 1607007998463,
+        "stop" : 1607045352866,
+        "duration" : 37354403
+      },
+      "severity" : "MINOR",
+      "status" : "BROKEN"
+    } ]
+  } ]
+}

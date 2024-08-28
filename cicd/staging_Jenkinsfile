@@ -1,0 +1,23 @@
+node(params.SLAVE) {
+  def remote = [:]
+  remote.name = 'staging_vm'
+  remote.host = params.STAGING_VM
+  remote.user = params.USERNAME
+  remote.password = params.PASSWORD
+  remote.allowAnyHosts = true
+
+    stage('Pull latest images from artifactory') {
+        sshCommand remote: remote, command: "cd automated-maintrack && time docker-compose -f docker-compose-staging.yml pull"
+    }
+    stage('Update Staging containers') {
+        sshCommand remote: remote, command: "cd automated-maintrack && time docker-compose -f docker-compose-staging.yml up -d"
+    }
+    stage('Remove dangling Docker data') {
+        sshCommand remote: remote, command: "docker system prune -f -a"
+    }
+    stage('User approval') {
+        timeout(time: 2, unit: "HOURS") {
+            input message: 'Approve Deploy?', ok: 'Yes'
+        }
+    }
+}

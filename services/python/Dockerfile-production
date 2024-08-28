@@ -1,0 +1,38 @@
+FROM armdocker.rnd.ericsson.se/dockerhub-ericsson-remote/python:3.8-slim-buster
+
+# Create a directory where our app will be placed
+RUN mkdir -p /usr/src/app
+
+# Change directory so that our commands run inside this new directory
+WORKDIR /usr/src/app
+
+# Declare args
+ARG PYTHON_PASSWORD=password
+ENV PYTHON_PASSWORD=${PYTHON_PASSWORD}
+
+RUN apt-get update
+
+RUN apt-get install -y openssh-server
+RUN mkdir /var/run/sshd
+
+RUN sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN echo "root:${PYTHON_PASSWORD}" | chpasswd
+
+RUN pip install -I pandas==1.1.4
+RUN pip install -I requests==2.24.0
+RUN pip install -I scikit-learn==0.23.2
+
+RUN /usr/bin/ssh-keygen -A
+RUN ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
+
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Copy files to container
+COPY services/python /usr/src/app
+
+RUN echo PYTHONPATH=/usr/src/app >> /etc/environment
+RUN echo PY_ENV=PROD >> /etc/environment
+
+EXPOSE 22
+CMD ["/usr/sbin/sshd","-D"]

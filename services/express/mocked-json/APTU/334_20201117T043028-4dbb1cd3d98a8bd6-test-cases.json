@@ -1,0 +1,292 @@
+{
+  "uid" : "a3b4d3113ed27e38",
+  "name" : "Is the maximum duration for file collection within the expected threshold?",
+  "fullName" : "assertions.enm_pm_assertions.EnmPmAssertion#test_is_the_maximum_duration_for_file_collection_within_expected_threshold",
+  "historyId" : "b8b09b87f69276f3b0904d93d6bc4717",
+  "time" : {
+    "start" : 1616769034654,
+    "stop" : 1616769034674,
+    "duration" : 20
+  },
+  "descriptionHtml" : " <head>\n                    <style>\n                    table, th, td {\n                      border: 1px solid black;\n                      border-collapse: collapse;\n                    }\n                    </style>\n                    </head>\n                    <body>\n                    <p>\n    This ENM assertion assert on whether the max pm rop collection time is within threshold.\n    </p>\n                    <p>TEST_ID - PM_ENM_D5YZ</p>\n                    <p>\n                    <table style=\"width:100%\">\n                      <tr>\n                        <td style=\"text-align:center\">Features</th>\n                        <td style=\"text-align:center\">ENM, PM, UPGRADE</th>\n                      </tr>\n                    </table>\n                    </p>\n                     <h4> The following configurations are available: </h4>\n                        <table style=\"width:100%\">\n                          <tr>\n                            <th>Configuration key</th>\n                            <th>Configuration value</th>\n                          </tr>\n                            \n                    <tr>\n                    <td style=\"text-align:center\">TOLERANCE</td>\n                    <td style=\"text-align:center\">900</td>\n                    </tr>\n                    \n                        </table>\n                         <h4> The following configurations are applied: </h4>\n                        <table style=\"width:100%\">\n                          <tr>\n                            <th>Applied Configuration key</th>\n                            <th>Applied Configuration value</th>\n                          </tr>\n                            \n                    <tr>\n                    <td style=\"text-align:center\">tolerance</td>\n                    <td style=\"text-align:center\">900</td>\n                    </tr>\n                    \n                        </table> \n                    <p>\n                  <h3>JIRA Links</h3>\n                  <p><a href=\"https://jira-oss.seli.wh.rnd.internal.ericsson.com/issues/?jql=labels%20%3D%20PM_ENM_D5YZ%20AND%20status%20!%3D%20Closed\"style=\"text-decoration: none;color:inherit\">Open Issues</a></p>\n                  <p><a href=\"https://jira-oss.seli.wh.rnd.internal.ericsson.com/issues/?jql=labels%20%3D%20PM_ENM_D5YZ%20AND%20status%20%3D%20Closed\"style=\"text-decoration: none;color:inherit\">Historical Issues</a></p>\n                  </p>\n                    </body>\n                     ",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup",
+    "time" : {
+      "start" : 1616769025112,
+      "stop" : 1616769025112,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "descriptionHtml" : " <head>\n                    <style>\n                    table, th, td {\n                      border: 1px solid black;\n                      border-collapse: collapse;\n                    }\n                    </style>\n                    </head>\n                    <body>\n                    <p>\n    This ENM assertion assert on whether the max pm rop collection time is within threshold.\n    </p>\n                    <p>TEST_ID - PM_ENM_D5YZ</p>\n                    <p>\n                    <table style=\"width:100%\">\n                      <tr>\n                        <td style=\"text-align:center\">Features</th>\n                        <td style=\"text-align:center\">ENM, PM, UPGRADE</th>\n                      </tr>\n                    </table>\n                    </p>\n                     <h4> The following configurations are available: </h4>\n                        <table style=\"width:100%\">\n                          <tr>\n                            <th>Configuration key</th>\n                            <th>Configuration value</th>\n                          </tr>\n                            \n                    <tr>\n                    <td style=\"text-align:center\">TOLERANCE</td>\n                    <td style=\"text-align:center\">900</td>\n                    </tr>\n                    \n                        </table>\n                         <h4> The following configurations are applied: </h4>\n                        <table style=\"width:100%\">\n                          <tr>\n                            <th>Applied Configuration key</th>\n                            <th>Applied Configuration value</th>\n                          </tr>\n                            \n                    <tr>\n                    <td style=\"text-align:center\">tolerance</td>\n                    <td style=\"text-align:center\">900</td>\n                    </tr>\n                    \n                        </table> \n                    <p>\n                  <h3>JIRA Links</h3>\n                  <p><a href=\"https://jira-oss.seli.wh.rnd.internal.ericsson.com/issues/?jql=labels%20%3D%20PM_ENM_D5YZ%20AND%20status%20!%3D%20Closed\"style=\"text-decoration: none;color:inherit\">Open Issues</a></p>\n                  <p><a href=\"https://jira-oss.seli.wh.rnd.internal.ericsson.com/issues/?jql=labels%20%3D%20PM_ENM_D5YZ%20AND%20status%20%3D%20Closed\"style=\"text-decoration: none;color:inherit\">Historical Issues</a></p>\n                  </p>\n                    </body>\n                     ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "69db144ff95f15ab",
+      "name" : "log",
+      "source" : "69db144ff95f15ab.txt",
+      "type" : "text/plain",
+      "size" : 2796
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_UnitTestCase__pytest_class_setup::0",
+    "time" : {
+      "start" : 1616769040426,
+      "stop" : 1616769040426,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Is the maximum duration for file collection within the expected threshold?"
+  }, {
+    "name" : "feature",
+    "value" : "PM"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite",
+    "value" : "enm_pm_assertions"
+  }, {
+    "name" : "subSuite",
+    "value" : "EnmPmAssertion"
+  }, {
+    "name" : "parentSuite",
+    "value" : "assertions"
+  }, {
+    "name" : "host",
+    "value" : "ieatwlvm6111"
+  }, {
+    "name" : "thread",
+    "value" : "31683-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "assertions.enm_pm_assertions"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TestCase Documentation",
+    "url" : "https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/content/sites/tor/assertion-python-utils/pm_enm_assertion.html",
+    "type" : "link"
+  }, {
+    "name" : "Story",
+    "url" : "https://jira-oss.seli.wh.rnd.internal.ericsson.com/browse/RTD-942",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 183,
+        "unknown" : 0,
+        "total" : 184
+      },
+      "items" : [ {
+        "uid" : "b05655c231d130e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616686810097,
+          "stop" : 1616686810119,
+          "duration" : 22
+        }
+      }, {
+        "uid" : "3e508617d3a38cc0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616569556987,
+          "stop" : 1616569557011,
+          "duration" : 24
+        }
+      }, {
+        "uid" : "473040c245b57c31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616534544528,
+          "stop" : 1616534544551,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "f5c46190d49876a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616396860417,
+          "stop" : 1616396860439,
+          "duration" : 22
+        }
+      }, {
+        "uid" : "9dd3d1565d64856d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616342498268,
+          "stop" : 1616342498292,
+          "duration" : 24
+        }
+      }, {
+        "uid" : "97c94bce62edf5f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616270196473,
+          "stop" : 1616270196495,
+          "duration" : 22
+        }
+      }, {
+        "uid" : "7de2e6a4ae11a6f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616124138570,
+          "stop" : 1616124138587,
+          "duration" : 17
+        }
+      }, {
+        "uid" : "370b6a8aa396b985",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616039630686,
+          "stop" : 1616039630711,
+          "duration" : 25
+        }
+      }, {
+        "uid" : "30e0a5e2b81270fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1616020171178,
+          "stop" : 1616020171199,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "53da927a45568331",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615937538739,
+          "stop" : 1615937538761,
+          "duration" : 22
+        }
+      }, {
+        "uid" : "9d0c4005a5f82380",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615651462094,
+          "stop" : 1615651462115,
+          "duration" : 21
+        }
+      }, {
+        "uid" : "70d4371d1b5b9632",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615413817730,
+          "stop" : 1615413817758,
+          "duration" : 28
+        }
+      }, {
+        "uid" : "1f63c5e08f7a6cbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615291363786,
+          "stop" : 1615291363814,
+          "duration" : 28
+        }
+      }, {
+        "uid" : "f05f45c58be50f77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615239490175,
+          "stop" : 1615239490198,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "d6cae3b9f0390df5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1615040888386,
+          "stop" : 1615040888411,
+          "duration" : 25
+        }
+      }, {
+        "uid" : "8acc68153ae1ccb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614797931789,
+          "stop" : 1614797931814,
+          "duration" : 25
+        }
+      }, {
+        "uid" : "db4911339f3993c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614321020025,
+          "stop" : 1614321020048,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "c22cc5d9d10c6af1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614296553002,
+          "stop" : 1614296553025,
+          "duration" : 23
+        }
+      }, {
+        "uid" : "ea78fa3a6926b176",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614137827448,
+          "stop" : 1614137827468,
+          "duration" : 20
+        }
+      }, {
+        "uid" : "36d0853ee7939d6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614114641267,
+          "stop" : 1614114641290,
+          "duration" : 23
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a3b4d3113ed27e38.json",
+  "parameterValues" : [ ]
+}

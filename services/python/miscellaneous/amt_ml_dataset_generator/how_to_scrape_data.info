@@ -1,0 +1,57 @@
+Hi all,
+
+This tool will be able to generate a CSV file to be used in ML
+This CSV file contains the information on slots (and product sets) in a number of drops
+
+The tool will only scrape drops that it doesnt have python pickles for. If there are pickles for a drop, it will use the
+information in the pickles instead of scraping the drop. This saves A LOT of time.
+
+The pickles contain information with the following combination of data:
+-- No II or PASSED entries
+-- No Rerunner
+-- With current fixes
+
+If you add any other fixes or want re runner results for example, you may want to backup the "ml_pickles" directory to
+somewhere safe and then delete the one in the repo. This will make the scraper not use the pickles and run the scraper
+E2E
+
+To add re runner results, you must edit build_log_scraper.py line 228
+
+To add II, PASSED you must add those options to the if statement of build_log_scraper.py lines 247-248
+
+If you would like to use the scraper, please follow the following instructions.
+
+Edit the variable "drops" in generate_dataset.py with whichever drop(s) you want to retrieve data for
+
+Edit line 57 in html_getter.py by adding in the BumbleBee Functional User Password:
+###########################################################
+send_keys("PASSWORD_HERE") # BB Func User password
+###########################################################
+
+For these steps to work, Python 3.8 is required. Follow steps to config sys path vars etc.
+
+You can use a headless browser like PhantomJS or Chromium for this. However, the code is setup to use Firefox.
+Therefore the steps below are to get Firefox ready to run selenium
+
+Install Firefox in your machine
+
+Download the gecko driver and place it wherever you want (you will need to specify the path to it though)
+Download the 64 bit version
+- https://github.com/mozilla/geckodriver/releases
+
+Edit your "Path" system variable and add the path to the gecko driver to it
+NOTE: DONT UPDATE THE USER VARIABLES, ONLY SYSTEM VARIABLES
+- Example "C:\Users\emesdel\geckodriver\geckodriver.exe"
+- You may have to restart your laptop after this step if you get issues when running the tool
+
+Pip install any python packages you may not have
+- requests
+- selenium
+- beautifulsoup4
+
+cd to python directory (services/python)
+- Export the python path to where you are:
+-- "eval 'export PYTHONPATH=$(pwd)'"
+
+Run the tool:
+python miscellaneous/amt_ml_dataset_generator/generate_dataset.py

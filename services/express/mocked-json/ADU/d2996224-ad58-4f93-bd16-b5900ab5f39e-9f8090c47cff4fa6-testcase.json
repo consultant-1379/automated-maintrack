@@ -1,0 +1,146 @@
+{
+  "uid" : "9f8090c47cff4fa6",
+  "name" : "TORRV-5477_High_1",
+  "title" : "Measure ENM Availability during Upgrade",
+  "time" : {
+    "start" : 1606499373728,
+    "stop" : 1606518947891,
+    "duration" : 19574163
+  },
+  "summary" : {
+    "attachments" : 5,
+    "steps" : 3
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Measure ENM Availability during Upgrade",
+    "type" : "TEXT"
+  },
+  "severity" : "MINOR",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "TORRV-5477_High_1",
+    "url" : "https://taftm.seli.wh.rnd.internal.ericsson.com/#tm/viewTC/TORRV-5477_High_1"
+  },
+  "suite" : {
+    "uid" : "9d925db3daab7333",
+    "name" : "UpgradeAvailability",
+    "title" : "UpgradeAvailability"
+  },
+  "steps" : [ {
+    "name" : "@BeforeSuite: beforeSuiteSetup",
+    "title" : "@Before suite: before suite setup",
+    "time" : {
+      "start" : 1606499373728,
+      "stop" : 1606499373728,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "upgradeVerifier",
+    "title" : "UPGRADE_VERIFIER: upgradeVerifier",
+    "time" : {
+      "start" : 1606499373813,
+      "stop" : 1606518947777,
+      "duration" : 19573964
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "29186846-e9b0-4dae-ab69-1d166d1d8bba-attachment.txt",
+      "type" : "text/plain",
+      "size" : 106175,
+      "uid" : "8e6d905a6dee47b9"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "@AfterSuite: afterSuiteTeardown",
+    "title" : "@After suite: after suite teardown",
+    "time" : {
+      "start" : 1606518950012,
+      "stop" : 1606518950012,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Availability Report",
+    "source" : "6f7d1c29-b2d5-4d0d-a8ee-785b3d029359-attachment.html",
+    "type" : "text/html",
+    "size" : 40975,
+    "uid" : "bf59e97cb9fbfa5d"
+  }, {
+    "title" : "ApplicationLauncher Report",
+    "source" : "954d0282-7f1e-457d-b0d5-8a1c750029fc-attachment.html",
+    "type" : "text/html",
+    "size" : 2065,
+    "uid" : "f886c55c7bd26aaa"
+  }, {
+    "title" : "Delayed Response Tracker",
+    "source" : "eebca3bc-fa67-4678-9cce-10a4c44de917-attachment.html",
+    "type" : "text/html",
+    "size" : 1797,
+    "uid" : "7e9e5e6746f07c8a"
+  }, {
+    "title" : "log.txt",
+    "source" : "b72c706c-4e4c-4155-a645-4e3aa975bbfc-attachment.txt",
+    "type" : "text/plain",
+    "size" : 56847,
+    "uid" : "fffe769dc7ab9e9a"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "UpgradeAvailability"
+  }, {
+    "name" : "story",
+    "value" : "TORRV-5477: Measure ENM availability during upgrade"
+  }, {
+    "name" : "execution_type",
+    "value" : "automated"
+  }, {
+    "name" : "suite-title",
+    "value" : "UpgradeAvailability"
+  }, {
+    "name" : "thread",
+    "value" : "UpgradeAvailability.1"
+  }, {
+    "name" : "sprint",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "feature",
+    "value" : "Other"
+  }, {
+    "name" : "framework",
+    "value" : "TAF"
+  }, {
+    "name" : "testId",
+    "value" : "TORRV-5477_High_1"
+  }, {
+    "name" : "host",
+    "value" : "9034f580cf85"
+  } ],
+  "parameters" : [ ]
+}

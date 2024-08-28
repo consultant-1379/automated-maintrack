@@ -1,0 +1,524 @@
+{
+  "uid" : "39184b11ffe622b8",
+  "name" : "TORRV-5477_High_1",
+  "title" : "Measure ENM Availability during Upgrade",
+  "time" : {
+    "start" : 1606889479485,
+    "stop" : 1606900323750,
+    "duration" : 10844265
+  },
+  "summary" : {
+    "attachments" : 23,
+    "steps" : 21
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "Measure ENM Availability during Upgrade",
+    "type" : "TEXT"
+  },
+  "severity" : "MINOR",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "TORRV-5477_High_1",
+    "url" : "https://taftm.seli.wh.rnd.internal.ericsson.com/#tm/viewTC/TORRV-5477_High_1"
+  },
+  "suite" : {
+    "uid" : "868ab40bb6c09b05",
+    "name" : "UpgradeAvailability",
+    "title" : "UpgradeAvailability"
+  },
+  "steps" : [ {
+    "name" : "@BeforeSuite: beforeSuiteSetup",
+    "title" : "@Before suite: before suite setup",
+    "time" : {
+      "start" : 1606889479485,
+      "stop" : 1606889479485,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "upgradeVerifier",
+    "title" : "UPGRADE_VERIFIER: upgradeVerifier",
+    "time" : {
+      "start" : 1606889504744,
+      "stop" : 1606900316744,
+      "duration" : 10812000
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "d3ddbb5c-ad2f-4644-ad96-71d50c91a593-attachment.txt",
+      "type" : "text/plain",
+      "size" : 84605,
+      "uid" : "eae9f31e37291e12"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCM",
+    "title" : "CM_VERIFY: executeCM",
+    "time" : {
+      "start" : 1606891160927,
+      "stop" : 1606900318126,
+      "duration" : 9157199
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "003b960b-2f3d-42bf-9da2-d394ec4dda4e-attachment.txt",
+      "type" : "text/plain",
+      "size" : 577511,
+      "uid" : "8fb2398e48ef8c73"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executePM",
+    "title" : "PM_VERIFY: executePM",
+    "time" : {
+      "start" : 1606891160909,
+      "stop" : 1606900318546,
+      "duration" : 9157637
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "5595bab9-1d5f-48c0-b01d-b802f343b401-attachment.txt",
+      "type" : "text/plain",
+      "size" : 258896,
+      "uid" : "b7f3d92c513b2fa5"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeFMB",
+    "title" : "FMB_VERIFY: executeFMB",
+    "time" : {
+      "start" : 1606891160909,
+      "stop" : 1606900318917,
+      "duration" : 9158008
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "724ba0f3-0873-44b3-bb89-6a579440f04b-attachment.txt",
+      "type" : "text/plain",
+      "size" : 136919,
+      "uid" : "9c2a4dc909955adf"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeSHM",
+    "title" : "SHM_VERIFY: executeSHM",
+    "time" : {
+      "start" : 1606891160920,
+      "stop" : 1606900319118,
+      "duration" : 9158198
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "b6bac5af-9809-43ac-b8a7-88a6dfaf1fe6-attachment.txt",
+      "type" : "text/plain",
+      "size" : 149374,
+      "uid" : "6636df560dda4cea"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeNbivs",
+    "title" : "NBIVS_VERIFY: executeNbivs",
+    "time" : {
+      "start" : 1606891160912,
+      "stop" : 1606900319226,
+      "duration" : 9158314
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "8486b197-6a3c-48e8-88c8-a56d741dea25-attachment.txt",
+      "type" : "text/plain",
+      "size" : 153661,
+      "uid" : "e82910def167a628"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeNbiva",
+    "title" : "NBIVA_VERIFY: executeNbiva",
+    "time" : {
+      "start" : 1606891160913,
+      "stop" : 1606900319302,
+      "duration" : 9158389
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "a6ca7914-c630-45f9-80b9-cd69b6c9dca5-attachment.txt",
+      "type" : "text/plain",
+      "size" : 288767,
+      "uid" : "354f8e2fa9710713"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCMBI",
+    "title" : "CMBI_VERIFY: executeCMBI",
+    "time" : {
+      "start" : 1606891160919,
+      "stop" : 1606900319333,
+      "duration" : 9158414
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "ff6c8414-91be-4672-a8e9-27d79f1cbe17-attachment.txt",
+      "type" : "text/plain",
+      "size" : 565064,
+      "uid" : "741a50a7a197ad56"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeFMR",
+    "title" : "FMR_VERIFY: executeFMR",
+    "time" : {
+      "start" : 1606891160912,
+      "stop" : 1606900319519,
+      "duration" : 9158607
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "138f2d7c-bf3c-40bc-9ee6-6fd06f98138f-attachment.txt",
+      "type" : "text/plain",
+      "size" : 345895,
+      "uid" : "8a709e49e96cad06"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeNETEX",
+    "title" : "NETEX_VERIFY: executeNETEX",
+    "time" : {
+      "start" : 1606891160928,
+      "stop" : 1606900319545,
+      "duration" : 9158617
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "a021a42e-399b-4de1-91ed-94a48fce348f-attachment.txt",
+      "type" : "text/plain",
+      "size" : 1990737,
+      "uid" : "56a82e03acbfdc7a"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeSystemLogin",
+    "title" : "SYSTEM_VERIFY: executeSystemLogin",
+    "time" : {
+      "start" : 1606891160927,
+      "stop" : 1606900319841,
+      "duration" : 9158914
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "820e270f-a36f-4711-911b-f8754159ff47-attachment.txt",
+      "type" : "text/plain",
+      "size" : 714788,
+      "uid" : "3e0839ff08bf64d6"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeUM",
+    "title" : "UM_VERIFY: executeUM",
+    "time" : {
+      "start" : 1606891160913,
+      "stop" : 1606900320159,
+      "duration" : 9159246
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "b6605f64-3370-452c-8833-7aefad6ee7af-attachment.txt",
+      "type" : "text/plain",
+      "size" : 2869527,
+      "uid" : "72c6866a8d764a59"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeESM",
+    "title" : "ESM_VERIFY: executeESM",
+    "time" : {
+      "start" : 1606891160908,
+      "stop" : 1606900320378,
+      "duration" : 9159470
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "9cbc8a9f-1fd2-4e8f-ba15-cf58ba29560a-attachment.txt",
+      "type" : "text/plain",
+      "size" : 3601486,
+      "uid" : "a2a63ee4cf9df769"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCMBE",
+    "title" : "CMBE_VERIFY: executeCMBE",
+    "time" : {
+      "start" : 1606891160927,
+      "stop" : 1606900320520,
+      "duration" : 9159593
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "059295be-5c2b-4797-913d-753d49695230-attachment.txt",
+      "type" : "text/plain",
+      "size" : 379423,
+      "uid" : "e13ce2881fd73b60"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeFM",
+    "title" : "FM_VERIFY: executeFM",
+    "time" : {
+      "start" : 1606891160927,
+      "stop" : 1606900320970,
+      "duration" : 9160043
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "aaf5412c-7ac7-4b63-a7d5-a2366fa56396-attachment.txt",
+      "type" : "text/plain",
+      "size" : 316692,
+      "uid" : "359c3256799b5f98"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeAmos",
+    "title" : "AMOS_VERIFY: executeAmos",
+    "time" : {
+      "start" : 1606891160920,
+      "stop" : 1606900322879,
+      "duration" : 9161959
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "7766a8ad-f566-43a5-b30f-cd7e5b78b590-attachment.txt",
+      "type" : "text/plain",
+      "size" : 6752139,
+      "uid" : "eee07e078bb77d14"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCMBIL",
+    "title" : "CMBIL_VERIFY: executeCMBIL",
+    "time" : {
+      "start" : 1606891160908,
+      "stop" : 1606900323128,
+      "duration" : 9162220
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "9db9cec8-fefd-4ba7-a92b-b7c79edcd6ee-attachment.txt",
+      "type" : "text/plain",
+      "size" : 265686,
+      "uid" : "3c536f54b1a805c9"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeLauncher",
+    "title" : "LAUNCHER_VERIFY: executeLauncher",
+    "time" : {
+      "start" : 1606891160908,
+      "stop" : 1606900323536,
+      "duration" : 9162628
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "43d01609-f4dd-47de-82dd-55fa3c94eb69-attachment.txt",
+      "type" : "text/plain",
+      "size" : 1391775,
+      "uid" : "901fa2ffc451363c"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executePMR",
+    "title" : "PMR_VERIFY: executePMR",
+    "time" : {
+      "start" : 1606891160936,
+      "stop" : 1606900323674,
+      "duration" : 9162738
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "c5c84a48-3376-4980-b860-3dd4fafcd4bd-attachment.txt",
+      "type" : "text/plain",
+      "size" : 271891,
+      "uid" : "96a832279e88818"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "@AfterSuite: afterSuiteTeardown",
+    "title" : "@After suite: after suite teardown",
+    "time" : {
+      "start" : 1606900375623,
+      "stop" : 1606900375623,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Availability Report",
+    "source" : "447d75e5-6dbc-47da-8a54-96053e3c8b80-attachment.html",
+    "type" : "text/html",
+    "size" : 55074,
+    "uid" : "6b8679baeccb51ef"
+  }, {
+    "title" : "ApplicationLauncher Report",
+    "source" : "fde2f3f4-d7e6-4ed8-90b8-d0c7de4a89b8-attachment.html",
+    "type" : "text/html",
+    "size" : 6316,
+    "uid" : "83040e2ee9915434"
+  }, {
+    "title" : "Delayed Response Tracker",
+    "source" : "5edbe8de-4f30-44d1-9f11-20a0542dce59-attachment.html",
+    "type" : "text/html",
+    "size" : 13884,
+    "uid" : "c2a69f0932a73197"
+  }, {
+    "title" : "log.txt",
+    "source" : "47ca5497-2e3b-4f6c-bc31-f2bc4f919e7c-attachment.txt",
+    "type" : "text/plain",
+    "size" : 94299,
+    "uid" : "36ce8e21e77b11cf"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "UpgradeAvailability"
+  }, {
+    "name" : "story",
+    "value" : "TORRV-5477: Measure ENM availability during upgrade"
+  }, {
+    "name" : "host",
+    "value" : "49b7b395c904"
+  }, {
+    "name" : "execution_type",
+    "value" : "automated"
+  }, {
+    "name" : "suite-title",
+    "value" : "UpgradeAvailability"
+  }, {
+    "name" : "thread",
+    "value" : "UpgradeAvailability.1"
+  }, {
+    "name" : "sprint",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "feature",
+    "value" : "Other"
+  }, {
+    "name" : "framework",
+    "value" : "TAF"
+  }, {
+    "name" : "testId",
+    "value" : "TORRV-5477_High_1"
+  } ],
+  "parameters" : [ ]
+}

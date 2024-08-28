@@ -1,0 +1,527 @@
+{
+  "uid" : "7d3c68a6696b47d8",
+  "name" : "TORRV-5477_High_1",
+  "title" : "Measure ENM Availability during Upgrade",
+  "time" : {
+    "start" : 1607007998463,
+    "stop" : 1607045352866,
+    "duration" : 37354403
+  },
+  "summary" : {
+    "attachments" : 23,
+    "steps" : 21
+  },
+  "failure" : {
+    "message" : "Can't open session ssh://taf_user@141.137.236.140:22, throws com.jcraft.jsch.JSchException(Auth fail)",
+    "stackTrace" : "com.ericsson.cifwk.taf.tools.cli.jsch.JSchCLIToolException: Can't open session ssh://taf_user@141.137.236.140:22, throws com.jcraft.jsch.JSchException(Auth fail)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchSession.open(JSchSession.java:79)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchCLITool.open(JSchCLITool.java:139)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchCLITool.open(JSchCLITool.java:125)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchCLITool.open(JSchCLITool.java:121)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchCLITool.openShell(JSchCLITool.java:97)\n\tat com.ericsson.cifwk.taf.tools.cli.CLI.openShell(CLI.java:196)\n\tat com.ericsson.cifwk.taf.tools.cli.CLI.openShell(CLI.java:184)\n\tat com.ericsson.de.tools.cli.SshCliTool.<init>(SshCliTool.java:34)\n\tat com.ericsson.de.tools.cli.SshShellBuilder.builds(SshShellBuilder.java:27)\n\tat com.ericsson.de.tools.cli.SshShellBuilder.builds(SshShellBuilder.java:10)\n\tat com.ericsson.de.tools.cli.AbstractGenericSshCliToolBuilder.build(AbstractGenericSshCliToolBuilder.java:81)\n\tat com.ericsson.nms.rv.core.util.CliShell.executeOnWL(CliShell.java:255)\n\tat com.ericsson.nms.rv.core.util.CliShell.execute(CliShell.java:91)\n\tat com.ericsson.nms.rv.core.workload.WorkLoadHandler.clashingProfileSetFlagExecution(WorkLoadHandler.java:82)\n\tat com.ericsson.sut.test.cases.HighAvailabilityTestCase.afterSuiteTeardown(HighAvailabilityTestCase.java:153)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)\n\tat org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)\n\tat org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)\n\tat org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:357)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:289)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\nCaused by: com.jcraft.jsch.JSchException: Auth fail\n\tat com.jcraft.jsch.Session.connect(Session.java:519)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchSession.createSession(JSchSession.java:90)\n\tat com.ericsson.cifwk.taf.tools.cli.jsch.JSchSession.open(JSchSession.java:61)\n\t... 29 more\n"
+  },
+  "description" : {
+    "value" : "Measure ENM Availability during Upgrade",
+    "type" : "TEXT"
+  },
+  "severity" : "MINOR",
+  "status" : "BROKEN",
+  "testId" : {
+    "name" : "TORRV-5477_High_1",
+    "url" : "https://taftm.seli.wh.rnd.internal.ericsson.com/#tm/viewTC/TORRV-5477_High_1"
+  },
+  "suite" : {
+    "uid" : "4b39ebc7881a2caa",
+    "name" : "UpgradeAvailability",
+    "title" : "UpgradeAvailability"
+  },
+  "steps" : [ {
+    "name" : "@BeforeSuite: beforeSuiteSetup",
+    "title" : "@Before suite: before suite setup",
+    "time" : {
+      "start" : 1607007998463,
+      "stop" : 1607007998463,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "upgradeVerifier",
+    "title" : "UPGRADE_VERIFIER: upgradeVerifier",
+    "time" : {
+      "start" : 1607008023513,
+      "stop" : 1607018045788,
+      "duration" : 10022275
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "62463fd4-b7ec-4288-b0b4-cab1eb2ac177-attachment.txt",
+      "type" : "text/plain",
+      "size" : 96225,
+      "uid" : "ece85fe1e74b3bdb"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCMBI",
+    "title" : "CMBI_VERIFY: executeCMBI",
+    "time" : {
+      "start" : 1607009567686,
+      "stop" : 1607018046101,
+      "duration" : 8478415
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "c1417ba2-6a7d-47a2-b371-6c627f02d462-attachment.txt",
+      "type" : "text/plain",
+      "size" : 502153,
+      "uid" : "236a108e42155914"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeNETEX",
+    "title" : "NETEX_VERIFY: executeNETEX",
+    "time" : {
+      "start" : 1607009567682,
+      "stop" : 1607018046992,
+      "duration" : 8479310
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "29317f56-cb76-40ae-b81f-f74107613ddc-attachment.txt",
+      "type" : "text/plain",
+      "size" : 1833239,
+      "uid" : "43a518f96becc3a9"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeNbiva",
+    "title" : "NBIVA_VERIFY: executeNbiva",
+    "time" : {
+      "start" : 1607009567676,
+      "stop" : 1607018047290,
+      "duration" : 8479614
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "a9cfb6bf-e33a-4844-962b-242f22944249-attachment.txt",
+      "type" : "text/plain",
+      "size" : 260347,
+      "uid" : "c9457fdd9b7cb924"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executePMR",
+    "title" : "PMR_VERIFY: executePMR",
+    "time" : {
+      "start" : 1607009567682,
+      "stop" : 1607018047425,
+      "duration" : 8479743
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "1b934fb8-50b0-45ca-8c9c-e08ff454406f-attachment.txt",
+      "type" : "text/plain",
+      "size" : 236545,
+      "uid" : "e0ade590935c768c"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeNbivs",
+    "title" : "NBIVS_VERIFY: executeNbivs",
+    "time" : {
+      "start" : 1607009567684,
+      "stop" : 1607018047889,
+      "duration" : 8480205
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "fe332e0e-f5e8-4501-a5e7-f945ef45208c-attachment.txt",
+      "type" : "text/plain",
+      "size" : 133537,
+      "uid" : "7d5b2ba9414f54ac"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeUM",
+    "title" : "UM_VERIFY: executeUM",
+    "time" : {
+      "start" : 1607009567712,
+      "stop" : 1607018048558,
+      "duration" : 8480846
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "333bb0c3-e00f-4256-b5fe-4c65eafe5553-attachment.txt",
+      "type" : "text/plain",
+      "size" : 2639276,
+      "uid" : "aba1d8c60b54f1cb"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeSystemLogin",
+    "title" : "SYSTEM_VERIFY: executeSystemLogin",
+    "time" : {
+      "start" : 1607009567684,
+      "stop" : 1607018048597,
+      "duration" : 8480913
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "2a7e8711-0e0f-45f7-9e66-c464e2c57d71-attachment.txt",
+      "type" : "text/plain",
+      "size" : 655782,
+      "uid" : "aa1ae491192e85bd"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executePM",
+    "title" : "PM_VERIFY: executePM",
+    "time" : {
+      "start" : 1607009567682,
+      "stop" : 1607018048721,
+      "duration" : 8481039
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "d995b587-c8d6-43be-a7c6-c8c1479e4c6c-attachment.txt",
+      "type" : "text/plain",
+      "size" : 236670,
+      "uid" : "52d65f2e827cac27"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeSHM",
+    "title" : "SHM_VERIFY: executeSHM",
+    "time" : {
+      "start" : 1607009567682,
+      "stop" : 1607018048836,
+      "duration" : 8481154
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "384e540b-3c3e-4a3e-841a-200ea6aa0919-attachment.txt",
+      "type" : "text/plain",
+      "size" : 90448,
+      "uid" : "af3eb275e3af73fb"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeFMB",
+    "title" : "FMB_VERIFY: executeFMB",
+    "time" : {
+      "start" : 1607009567693,
+      "stop" : 1607018049737,
+      "duration" : 8482044
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "62a4fa87-7c4c-4b10-bc07-5d56d2390801-attachment.txt",
+      "type" : "text/plain",
+      "size" : 116498,
+      "uid" : "2e0cab5d0e4dd9b8"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCMBE",
+    "title" : "CMBE_VERIFY: executeCMBE",
+    "time" : {
+      "start" : 1607009567690,
+      "stop" : 1607018049740,
+      "duration" : 8482050
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "fdc6640e-b487-4681-b6b1-e342c66730f6-attachment.txt",
+      "type" : "text/plain",
+      "size" : 332850,
+      "uid" : "e4c4face535e3faf"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeFMR",
+    "title" : "FMR_VERIFY: executeFMR",
+    "time" : {
+      "start" : 1607009567692,
+      "stop" : 1607018050710,
+      "duration" : 8483018
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "1dd5b5c8-5711-434a-aade-96ccfa596b7f-attachment.txt",
+      "type" : "text/plain",
+      "size" : 316432,
+      "uid" : "8f767ac5ab03fba3"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeAmos",
+    "title" : "AMOS_VERIFY: executeAmos",
+    "time" : {
+      "start" : 1607009567693,
+      "stop" : 1607018051545,
+      "duration" : 8483852
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "71ccaf81-1d08-4866-87ab-eeb5436d8e6a-attachment.txt",
+      "type" : "text/plain",
+      "size" : 6449851,
+      "uid" : "5a8aa28754ad9a61"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeESM",
+    "title" : "ESM_VERIFY: executeESM",
+    "time" : {
+      "start" : 1607009567677,
+      "stop" : 1607018052441,
+      "duration" : 8484764
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "36ab1287-b673-4aad-9e3b-3959738b1a31-attachment.txt",
+      "type" : "text/plain",
+      "size" : 2847064,
+      "uid" : "bf2979a48d129ebe"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCMBIL",
+    "title" : "CMBIL_VERIFY: executeCMBIL",
+    "time" : {
+      "start" : 1607009567687,
+      "stop" : 1607018052793,
+      "duration" : 8485106
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "57ae21a7-28ff-4dac-ba29-4b5c8912f77c-attachment.txt",
+      "type" : "text/plain",
+      "size" : 235170,
+      "uid" : "d0c3a147390db6df"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeFM",
+    "title" : "FM_VERIFY: executeFM",
+    "time" : {
+      "start" : 1607009567676,
+      "stop" : 1607018059849,
+      "duration" : 8492173
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "4e289b6e-4bb2-4e8b-b4be-842348e795be-attachment.txt",
+      "type" : "text/plain",
+      "size" : 194629,
+      "uid" : "31c4cc1b76a7e9e1"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeLauncher",
+    "title" : "LAUNCHER_VERIFY: executeLauncher",
+    "time" : {
+      "start" : 1607009567693,
+      "stop" : 1607018073092,
+      "duration" : 8505399
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "016a5462-4d43-41bd-8e31-037135d38832-attachment.txt",
+      "type" : "text/plain",
+      "size" : 1392958,
+      "uid" : "7f8452f9198470ab"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "executeCM",
+    "title" : "CM_VERIFY: executeCM",
+    "time" : {
+      "start" : 1607009567690,
+      "stop" : 1607045352777,
+      "duration" : 35785087
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "log.txt",
+      "source" : "bdc197d4-ad5c-4e97-b3a7-39fd9a6a439d-attachment.txt",
+      "type" : "text/plain",
+      "size" : 446493,
+      "uid" : "bca31f49ca8293c2"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "@AfterSuite: afterSuiteTeardown",
+    "title" : "@After suite: after suite teardown",
+    "time" : {
+      "start" : 1607045357060,
+      "stop" : 1607045357060,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "BROKEN",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Availability Report",
+    "source" : "370f3736-26a6-48d8-91bb-e34e2225cb55-attachment.html",
+    "type" : "text/html",
+    "size" : 44165,
+    "uid" : "3deed9d8824eabef"
+  }, {
+    "title" : "ApplicationLauncher Report",
+    "source" : "afedd5b3-f89f-4cf2-92d0-51314fdf6c50-attachment.html",
+    "type" : "text/html",
+    "size" : 6404,
+    "uid" : "f8792395d8a21102"
+  }, {
+    "title" : "Delayed Response Tracker",
+    "source" : "0f7db938-3686-4d06-a5a9-a87b7b10c7ff-attachment.html",
+    "type" : "text/html",
+    "size" : 7949,
+    "uid" : "8e6b0e067bc7b9c6"
+  }, {
+    "title" : "log.txt",
+    "source" : "a4af477f-b4dd-466d-a7f6-75add264cada-attachment.txt",
+    "type" : "text/plain",
+    "size" : 57615,
+    "uid" : "6fe1913a8ad223ec"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "UpgradeAvailability"
+  }, {
+    "name" : "story",
+    "value" : "TORRV-5477: Measure ENM availability during upgrade"
+  }, {
+    "name" : "execution_type",
+    "value" : "automated"
+  }, {
+    "name" : "suite-title",
+    "value" : "UpgradeAvailability"
+  }, {
+    "name" : "thread",
+    "value" : "UpgradeAvailability.1"
+  }, {
+    "name" : "sprint",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "feature",
+    "value" : "Other"
+  }, {
+    "name" : "framework",
+    "value" : "TAF"
+  }, {
+    "name" : "host",
+    "value" : "ab02b3d50b43"
+  }, {
+    "name" : "testId",
+    "value" : "TORRV-5477_High_1"
+  } ],
+  "parameters" : [ ]
+}

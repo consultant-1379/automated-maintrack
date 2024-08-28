@@ -1,0 +1,917 @@
+{
+  "time" : {
+    "start" : 1606907633940,
+    "stop" : 1606908182613,
+    "duration" : 548673
+  },
+  "testSuites" : [ {
+    "uid" : "cc251ad106dcf26b",
+    "name" : "CBA Sync Node - Venus",
+    "title" : "CBA Sync Node - Venus",
+    "time" : {
+      "start" : 1606907765795,
+      "stop" : 1606907766278,
+      "duration" : 483
+    },
+    "statistic" : {
+      "total" : 2,
+      "passed" : 0,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 2
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "b66011ad785c5c27",
+      "name" : "TestId not found as test case didn't start successfully",
+      "title" : "TestId not found as test case didn't start successfully",
+      "time" : {
+        "start" : 1606907765795,
+        "stop" : 1606907765800,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "a5a7c05db69bbdfd",
+      "name" : "TestId not found as test case didn't start successfully",
+      "title" : "TestId not found as test case didn't start successfully",
+      "time" : {
+        "start" : 1606907766278,
+        "stop" : 1606907766278,
+        "duration" : 0
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    } ]
+  }, {
+    "uid" : "a934f98e0b2d9d9d",
+    "name" : "FM_Acceptance_Test - Magrathea",
+    "title" : "FM_Acceptance_Test - Magrathea",
+    "time" : {
+      "start" : 1606907635345,
+      "stop" : 1606907946411,
+      "duration" : 311066
+    },
+    "statistic" : {
+      "total" : 30,
+      "passed" : 30,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "4450123bd783fa25",
+      "name" : "Enable Alarm Supervision - all node types",
+      "title" : "Enable Alarm Supervision - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, netsim, FM_Acceptance_Test - Magrat...",
+      "time" : {
+        "start" : 1606907635345,
+        "stop" : 1606907641927,
+        "duration" : 6582
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e2b8ce1ab849df09",
+      "name" : "Enable Alarm Supervision - all node types",
+      "title" : "Enable Alarm Supervision - all node types[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, netsim, FM_Acceptance_Test - Magr...",
+      "time" : {
+        "start" : 1606907635767,
+        "stop" : 1606907641930,
+        "duration" : 6163
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "29173af7334f9843",
+      "name" : "Enable Alarm Supervision - all node types",
+      "title" : "Enable Alarm Supervision - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, netsim, FM_Acceptance_Test - Magrat...",
+      "time" : {
+        "start" : 1606907636436,
+        "stop" : 1606907641929,
+        "duration" : 5493
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8eba138c772b8858",
+      "name" : "Spontaneous alarm reporting, supervision enabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision enabled - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, Alarm Supervision ON with spontaneo...",
+      "time" : {
+        "start" : 1606907642373,
+        "stop" : 1606907688373,
+        "duration" : 46000
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "558c7bb0971e25bc",
+      "name" : "Spontaneous alarm reporting, supervision enabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision enabled - all node types[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, Alarm Supervision ON with spontan...",
+      "time" : {
+        "start" : 1606907642676,
+        "stop" : 1606907688372,
+        "duration" : 45696
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "feb78642fa40aceb",
+      "name" : "Spontaneous alarm reporting, supervision enabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision enabled - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, Alarm Supervision ON with spontaneo...",
+      "time" : {
+        "start" : 1606907643018,
+        "stop" : 1606907688374,
+        "duration" : 45356
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6ba72abecc470d36",
+      "name" : "Disable Alarm Supervision - any node types",
+      "title" : "Disable Alarm Supervision - any node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, Verify Disabling Alarm Supervision,...",
+      "time" : {
+        "start" : 1606907689097,
+        "stop" : 1606907695364,
+        "duration" : 6267
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "50a397a9bea1226",
+      "name" : "Disable Alarm Supervision - any node types",
+      "title" : "Disable Alarm Supervision - any node types[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, Verify Disabling Alarm Supervisio...",
+      "time" : {
+        "start" : 1606907689520,
+        "stop" : 1606907695362,
+        "duration" : 5842
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e87adf28fa1cfc6",
+      "name" : "Disable Alarm Supervision - any node types",
+      "title" : "Disable Alarm Supervision - any node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, Verify Disabling Alarm Supervision,...",
+      "time" : {
+        "start" : 1606907689925,
+        "stop" : 1606907695361,
+        "duration" : 5436
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c3faf5b361d7a8e2",
+      "name" : "Spontaneous alarm reporting, supervision disabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision disabled - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, netsim, FM_Acceptance_Test - Magrat...",
+      "time" : {
+        "start" : 1606907695754,
+        "stop" : 1606907747140,
+        "duration" : 51386
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e3b654449d55e922",
+      "name" : "Spontaneous alarm reporting, supervision disabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision disabled - all node types[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, netsim, FM_Acceptance_Test - Magr...",
+      "time" : {
+        "start" : 1606907696044,
+        "stop" : 1606907747143,
+        "duration" : 51099
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "364426d8a85d4ff0",
+      "name" : "Spontaneous alarm reporting, supervision disabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision disabled - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, netsim, FM_Acceptance_Test - Magrat...",
+      "time" : {
+        "start" : 1606907696330,
+        "stop" : 1606907747142,
+        "duration" : 50812
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6dd013e0db13e699",
+      "name" : "FM - MSA01",
+      "title" : "Manual Synchronization of alarms",
+      "time" : {
+        "start" : 1606907747557,
+        "stop" : 1606907813103,
+        "duration" : 65546
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7cc47627a72012d8",
+      "name" : "FM - MSA01",
+      "title" : "Manual Synchronization of alarms",
+      "time" : {
+        "start" : 1606907748693,
+        "stop" : 1606907813101,
+        "duration" : 64408
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "aa1146370fc22393",
+      "name" : "FM - MSA01",
+      "title" : "Manual Synchronization of alarms",
+      "time" : {
+        "start" : 1606907748902,
+        "stop" : 1606907813107,
+        "duration" : 64205
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "640b35949435f112",
+      "name" : "FM - ASA01",
+      "title" : "Auto Synchronization of alarms",
+      "time" : {
+        "start" : 1606907813657,
+        "stop" : 1606907873718,
+        "duration" : 60061
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c3cb0040f955ab4d",
+      "name" : "FM - ASA01",
+      "title" : "Auto Synchronization of alarms",
+      "time" : {
+        "start" : 1606907813864,
+        "stop" : 1606907873719,
+        "duration" : 59855
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "75fe82cda14b3eaa",
+      "name" : "FM - ASA01",
+      "title" : "Auto Synchronization of alarms",
+      "time" : {
+        "start" : 1606907814069,
+        "stop" : 1606907873717,
+        "duration" : 59648
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "323f98ff29bcbdc4",
+      "name" : "Modify heartbeat interval - all node types",
+      "title" : "Modify heartbeat interval - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, Modify heartbeat interval, netsim, ...",
+      "time" : {
+        "start" : 1606907874431,
+        "stop" : 1606907878162,
+        "duration" : 3731
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5574c2c4f7cf4ab7",
+      "name" : "Modify heartbeat interval - all node types",
+      "title" : "Modify heartbeat interval - all node types[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, Modify heartbeat interval, netsim...",
+      "time" : {
+        "start" : 1606907874685,
+        "stop" : 1606907878161,
+        "duration" : 3476
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d3cb70366195828b",
+      "name" : "Modify heartbeat interval - all node types",
+      "title" : "Modify heartbeat interval - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, Modify heartbeat interval, netsim, ...",
+      "time" : {
+        "start" : 1606907874931,
+        "stop" : 1606907878163,
+        "duration" : 3232
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "caf8b22091979af9",
+      "name" : "Modify heartbeat timeout",
+      "title" : "Modify heartbeat timeout[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, Verify Heartbeat Supervision, netsi...",
+      "time" : {
+        "start" : 1606907878501,
+        "stop" : 1606907882156,
+        "duration" : 3655
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6ccdd89ca68e343a",
+      "name" : "Modify heartbeat timeout",
+      "title" : "Modify heartbeat timeout[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, Verify Heartbeat Supervision, net...",
+      "time" : {
+        "start" : 1606907878746,
+        "stop" : 1606907882154,
+        "duration" : 3408
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "216a0d164e437d69",
+      "name" : "Modify heartbeat timeout",
+      "title" : "Modify heartbeat timeout[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, Verify Heartbeat Supervision, netsi...",
+      "time" : {
+        "start" : 1606907878988,
+        "stop" : 1606907882155,
+        "duration" : 3167
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7bbb119036d99e25",
+      "name" : "Heartbeat alarm active - all node types",
+      "title" : "Heartbeat alarm active - all node types",
+      "time" : {
+        "start" : 1606907882311,
+        "stop" : 1606907917175,
+        "duration" : 34864
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "4769500a045c46d6",
+      "name" : "Heartbeat alarm active - all node types",
+      "title" : "Heartbeat alarm active - all node types",
+      "time" : {
+        "start" : 1606907882517,
+        "stop" : 1606907917173,
+        "duration" : 34656
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "79eae14526aa4ee5",
+      "name" : "Heartbeat alarm active - all node types",
+      "title" : "Heartbeat alarm active - all node types",
+      "time" : {
+        "start" : 1606907882724,
+        "stop" : 1606907917174,
+        "duration" : 34450
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "58825a535f070c94",
+      "name" : "Heartbeat alarm cleared - all node types",
+      "title" : "Heartbeat alarm cleared - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00032, LTE01dg2ERBS00032, TLS, null, public, n, Heartbeat alarm cleared, netsim, FM...",
+      "time" : {
+        "start" : 1606907917682,
+        "stop" : 1606907946411,
+        "duration" : 28729
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "eca92efb5b5278c1",
+      "name" : "Heartbeat alarm cleared - all node types",
+      "title" : "Heartbeat alarm cleared - all node types[null, ieatnetsimv14078, null, y, null, null, null, SGSN-16A-CP03-V108, SGSN-16A-CP03-V108, SSH, null, public, n, Heartbeat alarm cleared, netsim, ...",
+      "time" : {
+        "start" : 1606907917932,
+        "stop" : 1606907946410,
+        "duration" : 28478
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fc370262ed5b4355",
+      "name" : "Heartbeat alarm cleared - all node types",
+      "title" : "Heartbeat alarm cleared - all node types[null, ieatnetsimv14081, null, y, null, null, null, LTE01dg2ERBS00033, LTE01dg2ERBS00033, TLS, null, public, n, Heartbeat alarm cleared, netsim, FM...",
+      "time" : {
+        "start" : 1606907918205,
+        "stop" : 1606907946409,
+        "duration" : 28204
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    } ]
+  }, {
+    "uid" : "44b7e77e5968fd61",
+    "name" : "FM_Acceptance_Test - Quarks",
+    "title" : "FM_Acceptance_Test - Quarks",
+    "time" : {
+      "start" : 1606907636287,
+      "stop" : 1606908045061,
+      "duration" : 408774
+    },
+    "statistic" : {
+      "total" : 19,
+      "passed" : 19,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "69c7c6168f4c1d23",
+      "name" : "Enable Alarm Supervision - all node types",
+      "title" : "Enable Alarm Supervision - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, secret, FM_Er6000 - Quarks, null, SNM...",
+      "time" : {
+        "start" : 1606907636287,
+        "stop" : 1606907641743,
+        "duration" : 5456
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "27e6b5ddf34b6d05",
+      "name" : "Spontaneous alarm reporting, supervision enabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision enabled - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Alarm Supervision ON with spontaneous...",
+      "time" : {
+        "start" : 1606907642239,
+        "stop" : 1606907678631,
+        "duration" : 36392
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9785ce5c0af95924",
+      "name" : "Disable Alarm Supervision - any node types",
+      "title" : "Disable Alarm Supervision - any node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify Disabling Alarm Supervision, s...",
+      "time" : {
+        "start" : 1606907679349,
+        "stop" : 1606907684783,
+        "duration" : 5434
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1456cc5a0234927",
+      "name" : "Spontaneous alarm reporting, supervision disabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision disabled - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, secret, FM_Er6000 - Quarks, null, SNM...",
+      "time" : {
+        "start" : 1606907685143,
+        "stop" : 1606907714247,
+        "duration" : 29104
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "84c879a1e99dc2bc",
+      "name" : "FM - MSA01",
+      "title" : "Manual Synchronization of alarms",
+      "time" : {
+        "start" : 1606907714669,
+        "stop" : 1606907762176,
+        "duration" : 47507
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "db3355db501e14f4",
+      "name" : "FM - ASA01",
+      "title" : "Auto Synchronization of alarms",
+      "time" : {
+        "start" : 1606907762548,
+        "stop" : 1606907804344,
+        "duration" : 41796
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3b23386e9d62887f",
+      "name" : "TORF-8890_Func002",
+      "title" : "Manually acknowledge multiple alarms - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify fmcli commands - Manually ackn...",
+      "time" : {
+        "start" : 1606907804821,
+        "stop" : 1606907840515,
+        "duration" : 35694
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d8b129410a768c99",
+      "name" : "TORF-8890_Func003",
+      "title" : "Manually un-acknowledge multiple alarms - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify fmcli commands - Manually un-a...",
+      "time" : {
+        "start" : 1606907840951,
+        "stop" : 1606907844168,
+        "duration" : 3217
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "cd3084fad870bde",
+      "name" : "TORF-8890_Func004",
+      "title" : "Manually clear multiple alarms - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify fmcli commands - Manually clea...",
+      "time" : {
+        "start" : 1606907844386,
+        "stop" : 1606907855141,
+        "duration" : 10755
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5551c346408fdba2",
+      "name" : "TORF-8890_Func005",
+      "title" : "Manually acknowledge a single alarm - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify fmcli commands - Manually ackn...",
+      "time" : {
+        "start" : 1606907855363,
+        "stop" : 1606907879069,
+        "duration" : 23706
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9e79c6fa7fc47bd9",
+      "name" : "TORF-8890_Func006",
+      "title" : "Manually un-acknowledge a single alarm - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify fmcli commands - Manually un-a...",
+      "time" : {
+        "start" : 1606907879473,
+        "stop" : 1606907884969,
+        "duration" : 5496
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "275db17f6b050e35",
+      "name" : "TORF-8890_Func007",
+      "title" : "Manually clear a single alarm - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify fmcli commands - Manually clea...",
+      "time" : {
+        "start" : 1606907885185,
+        "stop" : 1606907896221,
+        "duration" : 11036
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "896f75d6ebf9b952",
+      "name" : "TORF-20215_Func002",
+      "title" : "Enable automatic acknowledgement of alarms - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify Auto Ack functionality, secret...",
+      "time" : {
+        "start" : 1606907896440,
+        "stop" : 1606907921262,
+        "duration" : 24822
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ea491209164a6cb7",
+      "name" : "TORF-20215_Func003",
+      "title" : "Disable automatic acknowledgement of alarms - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify Delayed Ack functionality, sec...",
+      "time" : {
+        "start" : 1606907921609,
+        "stop" : 1606907933596,
+        "duration" : 11987
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9355943a3e67683b",
+      "name" : "TORF-8893",
+      "title" : "Commenting on alarm[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Performing And Validating Alarm Comme...",
+      "time" : {
+        "start" : 1606907933802,
+        "stop" : 1606907961660,
+        "duration" : 27858
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "c4032a6ed3d710c9",
+      "name" : "Modify heartbeat interval - all node types",
+      "title" : "Modify heartbeat interval - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Modify heartbeat interval, secret, FM...",
+      "time" : {
+        "start" : 1606907962226,
+        "stop" : 1606907965341,
+        "duration" : 3115
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3917969f30eea5f0",
+      "name" : "Modify heartbeat timeout",
+      "title" : "Modify heartbeat timeout[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Verify Heartbeat Supervision, secret,...",
+      "time" : {
+        "start" : 1606907965615,
+        "stop" : 1606907968787,
+        "duration" : 3172
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9d2c001f337fb319",
+      "name" : "Heartbeat alarm active - all node types",
+      "title" : "Heartbeat alarm active - all node types",
+      "time" : {
+        "start" : 1606907968905,
+        "stop" : 1606908004477,
+        "duration" : 35572
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "4a137906f284cf5b",
+      "name" : "Heartbeat alarm cleared - all node types",
+      "title" : "Heartbeat alarm cleared - all node types[Quarks, null, ieatnetsimv14079, mgmt, null, y, ER6000, null, SPFRER60004, SPFRER60004, TLS, public, n, null, Heartbeat alarm cleared, secret, FM_E...",
+      "time" : {
+        "start" : 1606908004918,
+        "stop" : 1606908045061,
+        "duration" : 40143
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    } ]
+  }, {
+    "uid" : "bb7940a8c2331e9",
+    "name" : "NetworkHealthMonitor RFA250AcceptanceTests - Burgundy",
+    "title" : "NetworkHealthMonitor RFA250AcceptanceTests - Burgundy",
+    "time" : {
+      "start" : 1606908070208,
+      "stop" : 1606908096948,
+      "duration" : 26740
+    },
+    "statistic" : {
+      "total" : 4,
+      "passed" : 4,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "42073f25118d5b43",
+      "name" : "TORF-70035_Verify_Nodes_Breach_via_REST",
+      "title" : "[NHM] Verifying Nodes Breach per KPI widgets via REST",
+      "time" : {
+        "start" : 1606908070208,
+        "stop" : 1606908070932,
+        "duration" : 724
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "90e3ea68944e46a2",
+      "name" : "TORF-374315_Verify_historic_kpi_data_via_REST",
+      "title" : "[NHM] Verify that the historic kpi data is retrieved",
+      "time" : {
+        "start" : 1606908071060,
+        "stop" : 1606908072091,
+        "duration" : 1031
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9ef02654f2f6e61a",
+      "name" : "TORF-39670_Activation and deactivation of real time KPI",
+      "title" : "[NHM REST] Activate then deactivate real time KPI",
+      "time" : {
+        "start" : 1606908072211,
+        "stop" : 1606908096416,
+        "duration" : 24205
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "70a5b2bbc13481b",
+      "name" : "Collect services logs",
+      "title" : "Collect services logs",
+      "time" : {
+        "start" : 1606908096625,
+        "stop" : 1606908096948,
+        "duration" : 323
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  }, {
+    "uid" : "6faab5b12839840e",
+    "name" : "FM_Acceptance_Test_FH - Starks",
+    "title" : "FM_Acceptance_Test_FH - Starks",
+    "time" : {
+      "start" : 1606907633940,
+      "stop" : 1606908182613,
+      "duration" : 548673
+    },
+    "statistic" : {
+      "total" : 19,
+      "passed" : 19,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "31baa0194c618d1c",
+      "name" : "Enable Alarm Supervision - all node types",
+      "title" : "Enable Alarm Supervision - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, user, FM_Acceptance_Test_FH - ...",
+      "time" : {
+        "start" : 1606907633940,
+        "stop" : 1606907638760,
+        "duration" : 4820
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "dfaabe6599a1fab7",
+      "name" : "Spontaneous alarm reporting, supervision enabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision enabled - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Alarm Supervision ON with spon...",
+      "time" : {
+        "start" : 1606907639196,
+        "stop" : 1606907674832,
+        "duration" : 35636
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6439df5b86b494d4",
+      "name" : "Disable Alarm Supervision - any node types",
+      "title" : "Disable Alarm Supervision - any node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify Disabling Alarm Supervi...",
+      "time" : {
+        "start" : 1606907675501,
+        "stop" : 1606907680586,
+        "duration" : 5085
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b248958f9a87715",
+      "name" : "Spontaneous alarm reporting, supervision disabled - all node types",
+      "title" : "Spontaneous alarm reporting, supervision disabled - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, user, FM_Acceptance_Test_FH - ...",
+      "time" : {
+        "start" : 1606907680942,
+        "stop" : 1606907707158,
+        "duration" : 26216
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2e23d0e0f9fffd8c",
+      "name" : "FM - MSA01",
+      "title" : "Manual Synchronization of alarms",
+      "time" : {
+        "start" : 1606907707461,
+        "stop" : 1606907755816,
+        "duration" : 48355
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3e75eee67102c35c",
+      "name" : "FM - ASA01",
+      "title" : "Auto Synchronization of alarms",
+      "time" : {
+        "start" : 1606907756131,
+        "stop" : 1606907896158,
+        "duration" : 140027
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3deaa0cf3e0630ac",
+      "name" : "TORF-8890_Func002",
+      "title" : "Manually acknowledge multiple alarms - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify fmcli commands - Manual...",
+      "time" : {
+        "start" : 1606907896676,
+        "stop" : 1606907929039,
+        "duration" : 32363
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "27f6f74d48ca00db",
+      "name" : "TORF-8890_Func003",
+      "title" : "Manually un-acknowledge multiple alarms - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify fmcli commands - Manual...",
+      "time" : {
+        "start" : 1606907929434,
+        "stop" : 1606907932571,
+        "duration" : 3137
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "bcdd56283fe4f0cd",
+      "name" : "TORF-8890_Func004",
+      "title" : "Manually clear multiple alarms - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify fmcli commands - Manual...",
+      "time" : {
+        "start" : 1606907932750,
+        "stop" : 1606907943429,
+        "duration" : 10679
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "972ecd41872740a7",
+      "name" : "TORF-8890_Func005",
+      "title" : "Manually acknowledge a single alarm - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify fmcli commands - Manual...",
+      "time" : {
+        "start" : 1606907943622,
+        "stop" : 1606907967016,
+        "duration" : 23394
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "615f610eb3de1d97",
+      "name" : "TORF-8890_Func006",
+      "title" : "Manually un-acknowledge a single alarm - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify fmcli commands - Manual...",
+      "time" : {
+        "start" : 1606907967333,
+        "stop" : 1606907970645,
+        "duration" : 3312
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8d139096e3570efb",
+      "name" : "TORF-8890_Func007",
+      "title" : "Manually clear a single alarm - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify fmcli commands - Manual...",
+      "time" : {
+        "start" : 1606907970831,
+        "stop" : 1606907981707,
+        "duration" : 10876
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "600f91de73c82154",
+      "name" : "TORF-20215_Func002",
+      "title" : "Enable automatic acknowledgement of alarms - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify Auto Ack functionality,...",
+      "time" : {
+        "start" : 1606907981912,
+        "stop" : 1606908005992,
+        "duration" : 24080
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "680269e90293638a",
+      "name" : "TORF-20215_Func003",
+      "title" : "Disable automatic acknowledgement of alarms - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify Delayed Ack functionali...",
+      "time" : {
+        "start" : 1606908006330,
+        "stop" : 1606908021274,
+        "duration" : 14944
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ae2fc874a111f3f",
+      "name" : "TORF-8893",
+      "title" : "Commenting on alarm[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Performing And Validating Alar...",
+      "time" : {
+        "start" : 1606908021606,
+        "stop" : 1606908049290,
+        "duration" : 27684
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2f70cfcafe7dc452",
+      "name" : "Modify heartbeat interval - all node types",
+      "title" : "Modify heartbeat interval - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Modify heartbeat interval, use...",
+      "time" : {
+        "start" : 1606908049810,
+        "stop" : 1606908052690,
+        "duration" : 2880
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "eb948d733a5beb09",
+      "name" : "Modify heartbeat timeout",
+      "title" : "Modify heartbeat timeout[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Verify Heartbeat Supervision, ...",
+      "time" : {
+        "start" : 1606908052989,
+        "stop" : 1606908055713,
+        "duration" : 2724
+      },
+      "severity" : "MINOR",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ea2879b06222aae1",
+      "name" : "Heartbeat alarm active - all node types",
+      "title" : "Heartbeat alarm active - all node types",
+      "time" : {
+        "start" : 1606908055843,
+        "stop" : 1606908124034,
+        "duration" : 68191
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9e363fd175418464",
+      "name" : "Heartbeat alarm cleared - all node types",
+      "title" : "Heartbeat alarm cleared - all node types[Starks, null, ieatnetsimv14079, null, y, null, null, null, FrontHaul608005, FrontHaul608005, SSH, guest, public, n, Heartbeat alarm cleared, user,...",
+      "time" : {
+        "start" : 1606908124544,
+        "stop" : 1606908182613,
+        "duration" : 58069
+      },
+      "severity" : "BLOCKER",
+      "status" : "PASSED"
+    } ]
+  } ]
+}

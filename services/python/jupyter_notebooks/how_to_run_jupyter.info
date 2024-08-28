@@ -1,0 +1,12 @@
+The following is the command you should run in powershell to spin up Jupyter:
+- docker run --rm -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "cd:/home/jovyan/work" jupyter/datascience-notebook:python-3.8.6
+
+The command will produce 3 links at the end. Grab the last one and paste into browser. Should look something like this:
+- http://127.0.0.1:8888/?token=24bc33135f3c84b386cf51d33af79cad97700ecadbb15b8d
+- ** Do not use this link. This is just an example. Each token in the URL is unique. **
+
+Click and drag whatever files and notebooks you want to use onto the file explorer of the Jupyter browser window
+
+If you want to run a whole notebook, open it and click the button to restart kernel and re run notebook
+
+If you are using Visual Studio, you should be able to open the notebook on your IDE to view it as it has support for notebooks.

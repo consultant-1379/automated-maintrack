@@ -1,0 +1,30 @@
+### How to Retrain the AMT model ###
+
+Step 1 - Get Training Data
+- First step is making sure you run the generate dataset with the latest drops
+-- Check the "how_to_scrape_data.info" file for how to do that
+-- Once you run the generate dataset, a new file called training_dataset.csv should be created in this folder
+-- This can take between 7 and 30 minutes depending on how many new slots you are scraping
+
+Step 2 - Make a new model
+- Spin up the python container and exec into it
+- Run retrain_model.py by running: python miscellaneous/amt_ml_dataset_generator/retrain_model.py
+-- Depending on the amount of data, this could take a few hours to run
+-- Take note of the log line "SVC best score" as it gives us an indication of how good the data we have is
+-- This will generate the file: model.pickle
+
+Step 3 - Replace AMT's old model with new one
+- Exit the container and cd into python directory once again (services/python)
+- Use a docker cp command to copy the generated model out of the container and onto AMT
+-- docker cp automated-maintrack_python_1:/usr/src/app/miscellaneous/amt_ml_dataset_generator/model.pickle machine_learning
+
+Step 4 - Replace the sample dataset in AMT
+- After the model has been retrained, rename the "training_dataset.csv" file that was used to train the model to "assertion_dataset_template.csv"
+- Open "assertion_dataset_template.csv", delete all rows except the first row (headings)
+- Now in the second row, add 0s for all columns except test suites which should be all 1s
+-- For the PS column value place "TEMPLATE_PS"
+-- For the DG Number column value place "TEMPLATE_DG"
+-- Excel has features to help do this. Definitely don't do this manually
+--- Check the existing AMT "assertion_dataset_template.csv" file if you are unsure on how to fill it in
+- Delete the last column which is the "obsoleted" column
+- Now replace the assertion_dataset_template.csv file in AMT with this new one

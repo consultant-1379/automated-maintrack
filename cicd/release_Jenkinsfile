@@ -1,0 +1,58 @@
+pipeline {
+    agent {
+        node {
+            label SLAVE
+        }
+    }
+
+    stages {
+        stage('Bump Version') {
+            steps {
+                sh "sh release/bump_version.sh"
+                script {
+                    IMAGE_VERSION = readFile('artifact.properties').trim()
+                }
+            }
+        }
+        stage('Build and Push Express Service') {
+            steps {
+                sh "sh release/build_and_push_service.sh \"amt_server\" \"services/express/Dockerfile-production\" \"${IMAGE_VERSION}\""
+            }
+        }
+        stage('Build and Push NGINX Service') {
+            steps {
+                sh "sh release/build_and_push_service.sh \"amt_nginx\" \"services/nginx/Dockerfile-production\" \"${IMAGE_VERSION}\""
+            }
+        }
+        stage('Build and Push Logstash Service') {
+            steps {
+                sh "sh release/build_and_push_service.sh \"amt_logstash\" \"services/logstash/Dockerfile-production\" \"${IMAGE_VERSION}\""
+            }
+        }
+        stage('Build and Push Filebeat Service') {
+            steps {
+                sh "sh release/build_and_push_service.sh \"amt_filebeat\" \"services/filebeat/Dockerfile-production\" \"${IMAGE_VERSION}\""
+            }
+        }
+        stage('Build and Push Python Service') {
+            steps {
+                sh "sh release/build_and_push_service.sh \"amt_python\" \"services/python/Dockerfile-production\" \"${IMAGE_VERSION}\" \"${params.PYTHON_PASSWORD}\""
+            }
+        }
+        stage('Git tag version') {
+            steps {
+                sh "sh release/git_tag_version.sh \"${IMAGE_VERSION}\""
+            }
+        }
+        stage('Archive artifact properties file') {
+            steps {
+                   archiveArtifacts artifacts: 'artifact.properties', onlyIfSuccessful: true
+            }
+        }
+        stage('Cleanup unused Docker data') {
+            steps {
+                sh "docker system prune -a -f"
+            }
+        }
+    }
+}

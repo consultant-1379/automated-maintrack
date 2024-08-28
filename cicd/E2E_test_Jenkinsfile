@@ -1,0 +1,228 @@
+pipeline {
+    agent {
+        node {
+            label SLAVE
+        }
+    }
+
+    stages {
+        stage('Download MT Utils') {
+            steps {
+                sh '''
+                    mt_utils_version="RELEASE"
+                    echo "Retrieving Scripts from Nexus"
+                    tar_file_name="utils_${mt_utils_version}.tar.gz"
+                    echo "Downloading file - ${tar_file_name} - to the workspace"
+                    curl -s --noproxy \\* -L "https://arm1s11-eiffel004.eiffel.gic.ericsson.se:8443/nexus/service/local/artifact/maven/redirect?r=releases&g=com.ericsson.mtg&a=utils&p=tar.gz&v=${mt_utils_version}" -o ${tar_file_name}
+                    tar -zxf ${tar_file_name}
+                '''
+            }
+        }
+        stage('Update AMT & EMT URLs to staging') {
+            steps {
+                sh '''
+                    filename=MTELoopScripts/etc/pylibs/utils.ini
+                    amt_key="amt_url"
+                    amt_value="https://atvts2753.athtem.eei.ericsson.se"
+                    emt_key="emt_url"
+                    emt_value="https://atvts3379.athtem.eei.ericsson.se"
+                    sed -ir "s,${amt_key} =.*,$amt_key = $amt_value," $filename
+                    sed -ir "s,${emt_key} =.*,$emt_key = $emt_value," $filename
+                    echo "" >> MTELoopScripts/etc/pylibs/utils.ini
+                    echo "" > "${WORKSPACE}/build.properties"
+                    echo "emt_failure=false" >> "${WORKSPACE}/build.properties"
+                '''
+            }
+        }
+        stage('Update AMT Switchboard') {
+            steps {
+                sh '''
+                    echo "amt_trigger_status=off" >> "${WORKSPACE}/parameters.properties"
+                    echo "e2e_slot_completion_DG_obsoletion_behaviour=all" >> "${WORKSPACE}/parameters.properties"
+                    echo "upgrade_slot_mechanism_status=sequential" >> "${WORKSPACE}/parameters.properties"
+                    echo "number_of_delivery_groups=4" >> "${WORKSPACE}/parameters.properties"
+                    echo "bugs_and_trs_only_status=off" >> "${WORKSPACE}/parameters.properties"
+                    echo "slot_ug_failure_behaviour=obsolete" >> "${WORKSPACE}/parameters.properties"
+                    echo "build_user=JenkinsUser" >> "${WORKSPACE}/parameters.properties"
+                    sh MTELoopScripts/pipeline_scripts/amt/jenkins/amt_toggle_switches_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                '''
+            }
+        }
+        stage('Trigger master job stage for first slot') {
+            steps {
+                sh '''
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_master_job_setup.sh "first_slot" || exit 1
+                '''
+            }
+        }
+        stage('Load properties for first slot') {
+            steps {
+                sh '''
+                    filename=MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh
+                    sed -ir "s,retrieve_job_result,job_result=success," $filename
+                '''
+                script{
+                    loadProperties("${WORKSPACE}/parameters.properties")
+                }
+            }
+        }
+        stage('pENM job stage for first slot') {
+            steps {
+                sh '''
+                    echo "deployment_type=physical" >> "${WORKSPACE}/parameters.properties"
+                    echo "cluster_id=${cluster_id}" >> "${WORKSPACE}/parameters.properties"
+                    sh MTELoopScripts/pipeline_scripts/emt/jenkins/intermediate_build_setup.sh "${WORKSPACE}/parameters.properties" "initial" || exit 1
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_pipeline_job_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                    filename=MTELoopScripts/pipeline_scripts/emt/emt_pipeline_operations.sh
+                    sed -ir "s,retrieve_job_result,job_result=SUCCESS," $filename
+                    sh MTELoopScripts/pipeline_scripts/emt/jenkins/final_build_setup.sh "${WORKSPACE}/parameters.properties" "post_build" || exit 1
+                    echo "final_job=true" >> "${WORKSPACE}/parameters.properties"
+                    sh MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                '''
+            }
+        }
+        stage('vENM job stage for first slot') {
+            steps {
+                sh '''
+                    echo "deployment_type=cloud" >> "${WORKSPACE}/parameters.properties"
+                    echo "cluster_id=${venm_functional_hostname}" >> "${WORKSPACE}/parameters.properties"
+                    sh MTELoopScripts/pipeline_scripts/emt/jenkins/intermediate_build_setup.sh "${WORKSPACE}/parameters.properties" "initial" || exit 1
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_pipeline_job_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                    sh MTELoopScripts/pipeline_scripts/emt/jenkins/final_build_setup.sh "${WORKSPACE}/parameters.properties" "post_build" || exit 1
+                    echo "final_job=true" >> "${WORKSPACE}/parameters.properties"
+                    sh MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                '''
+            }
+        }
+        stage('Validations for first slot') {
+            steps {
+                sh '''
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_testing_setup.sh "first_slot" || exit 1
+                '''
+            }
+        }
+        stage('Trigger master job stage for second slot') {
+            steps {
+                sh '''
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_master_job_setup.sh "second_slot" || exit 1
+                '''
+            }
+        }
+        stage('Load properties for second slot') {
+            steps {
+                sh '''
+                    filename=MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh
+                    sed -ir "s,job_result=success,job_result=failure," $filename
+                '''
+                script{
+                    loadProperties("${WORKSPACE}/parameters.properties")
+                }
+            }
+        }
+        stage('pENM job stage for second slot') {
+            steps {
+                catchError {
+                    sh '''
+                        echo "deployment_type=physical" >> "${WORKSPACE}/parameters.properties"
+                        echo "cluster_id=${cluster_id}" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/intermediate_build_setup.sh "${WORKSPACE}/parameters.properties" "initial" || exit 1
+                        sh MTELoopScripts/pipeline_scripts/test/amt_e2e_pipeline_job_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                        filename=MTELoopScripts/pipeline_scripts/emt/emt_pipeline_operations.sh
+                        sed -ir "s,job_result=SUCCESS,job_result=FAILURE," $filename
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/final_build_setup.sh "${WORKSPACE}/parameters.properties" "post_build" || exit 1
+                        echo "final_job=true" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                    '''
+                }
+            }
+        }
+        stage('vENM job stage for second slot') {
+            steps {
+                catchError {
+                    sh '''
+                        echo "deployment_type=cloud" >> "${WORKSPACE}/parameters.properties"
+                        echo "cluster_id=${venm_functional_hostname}" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/intermediate_build_setup.sh "${WORKSPACE}/parameters.properties" "initial" || exit 1
+                        sh MTELoopScripts/pipeline_scripts/test/amt_e2e_pipeline_job_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/final_build_setup.sh "${WORKSPACE}/parameters.properties" "post_build" || exit 1
+                        echo "final_job=true" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                    '''
+                }
+            }
+        }
+        stage('Validations for second slot') {
+            steps {
+                sh '''
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_testing_setup.sh "second_slot" || exit 1
+                '''
+            }
+        }
+        stage('Trigger master job stage for third slot') {
+            steps {
+                sh '''
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_master_job_setup.sh "third_slot" || exit 1
+                '''
+            }
+        }
+        stage('Load properties for third slot') {
+            steps {
+                script{
+                    loadProperties("${WORKSPACE}/parameters.properties")
+                }
+            }
+        }
+        stage('pENM job stage for third slot') {
+            steps {
+                catchError {
+                    sh '''
+                        echo "deployment_type=physical" >> "${WORKSPACE}/parameters.properties"
+                        echo "cluster_id=${cluster_id}" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/intermediate_build_setup.sh "${WORKSPACE}/parameters.properties" "initial" || exit 1
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/final_build_setup.sh "${WORKSPACE}/parameters.properties" "post_build" || exit 1
+                        echo "upgrade_job=true" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                    '''
+                }
+            }
+        }
+        stage('vENM job stage for third slot') {
+            steps {
+                catchError {
+                    sh '''
+                        echo "deployment_type=cloud" >> "${WORKSPACE}/parameters.properties"
+                        echo "cluster_id=${venm_functional_hostname}" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/intermediate_build_setup.sh "${WORKSPACE}/parameters.properties" "initial" || exit 1
+                        sh MTELoopScripts/pipeline_scripts/emt/jenkins/final_build_setup.sh "${WORKSPACE}/parameters.properties" "post_build" || exit 1
+                        echo "upgrade_job=true" >> "${WORKSPACE}/parameters.properties"
+                        sh MTELoopScripts/pipeline_scripts/amt/post_to_amt_setup.sh "${WORKSPACE}/parameters.properties" || exit 1
+                    '''
+                }
+            }
+        }
+        stage('Validations for third slot') {
+            steps {
+                sh '''
+                    sh MTELoopScripts/pipeline_scripts/test/amt_e2e_testing_setup.sh "third_slot" || exit 1
+                '''
+            }
+        }
+        stage('User approval') {
+            steps {
+                timeout(time: 2, unit: "HOURS") {
+                    input message: 'Approve Deploy?', ok: 'Yes'
+                }
+            }
+        }
+    }
+
+}
+
+def loadProperties(String filePath) {
+    file = readFile(filePath).trim()
+    def lines = file.readLines()
+    for (line in lines) {
+        arr = line.split('=')
+        env."${arr[0]}" = "${arr[1]}"
+    }
+}
